@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOSFirstApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,38 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abK-ea-3Ga">
+                                <rect key="frame" x="529" y="20" width="56" height="30"/>
+                                <state key="normal" title="Guardar"/>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Escribir tarea" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="69J-dk-htx">
+                                <rect key="frame" x="20" y="21" width="501" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IqG-jb-VCw">
+                                <rect key="frame" x="20" y="59" width="565" height="521"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="IqG-jb-VCw" secondAttribute="leading" id="9I4-jw-5aX"/>
+                            <constraint firstItem="IqG-jb-VCw" firstAttribute="top" secondItem="69J-dk-htx" secondAttribute="bottom" constant="8" id="LT7-pb-MOr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="IqG-jb-VCw" secondAttribute="bottom" constant="20" id="QM2-Ud-dsz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IqG-jb-VCw" secondAttribute="trailing" constant="-5" id="Zse-ve-gBJ"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="69J-dk-htx" secondAttribute="leading" id="bQ3-uX-m08"/>
+                            <constraint firstItem="69J-dk-htx" firstAttribute="baseline" secondItem="abK-ea-3Ga" secondAttribute="baseline" id="bbx-SY-tRA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="abK-ea-3Ga" secondAttribute="trailing" constant="-5" id="dcu-cJ-bNa"/>
+                            <constraint firstItem="abK-ea-3Ga" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="mJi-S2-wf9"/>
+                            <constraint firstItem="abK-ea-3Ga" firstAttribute="leading" secondItem="69J-dk-htx" secondAttribute="trailing" constant="8" id="zCe-OD-QEQ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="421" y="323"/>
         </scene>
     </scenes>
 </document>
