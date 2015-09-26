@@ -14,6 +14,7 @@
 		CDA2A4ED1BB5D4EC0007A536 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDA2A4EB1BB5D4EC0007A536 /* LaunchScreen.storyboard */; };
 		CDA2A4F81BB5D4EC0007A536 /* iOSFirstAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA2A4F71BB5D4EC0007A536 /* iOSFirstAppTests.swift */; };
 		CDA2A5031BB5D4EC0007A536 /* iOSFirstAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA2A5021BB5D4EC0007A536 /* iOSFirstAppUITests.swift */; };
+		CDA2A5111BB70ED80007A536 /* TodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA2A5101BB70ED80007A536 /* TodoList.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		CDA2A4FE1BB5D4EC0007A536 /* iOSFirstAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSFirstAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDA2A5021BB5D4EC0007A536 /* iOSFirstAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSFirstAppUITests.swift; sourceTree = "<group>"; };
 		CDA2A5041BB5D4ED0007A536 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDA2A5101BB70ED80007A536 /* TodoList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				CDA2A4E21BB5D4EC0007A536 /* AppDelegate.swift */,
 				CDA2A4E41BB5D4EC0007A536 /* ViewController.swift */,
+				CDA2A5101BB70ED80007A536 /* TodoList.swift */,
 				CDA2A4E61BB5D4EC0007A536 /* Main.storyboard */,
 				CDA2A4E91BB5D4EC0007A536 /* Assets.xcassets */,
 				CDA2A4EB1BB5D4EC0007A536 /* LaunchScreen.storyboard */,
@@ -255,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDA2A5111BB70ED80007A536 /* TodoList.swift in Sources */,
 				CDA2A4E51BB5D4EC0007A536 /* ViewController.swift in Sources */,
 				CDA2A4E31BB5D4EC0007A536 /* AppDelegate.swift in Sources */,
 			);

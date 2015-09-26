@@ -9,6 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var itemTextField: UITextField!
+    @IBOutlet weak var tableView: UITableView!
+    let todoList = TodoList()
+    
+    @IBAction func addButtonPressed(sender: UIButton) {
+        print("Agregando un elemento a la lista"+("\(itemTextField.text)"))
+        todoList.addItem(itemTextField.text!)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
